@@ -92,6 +92,6 @@ const routerJSX = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={routerJSX} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );
