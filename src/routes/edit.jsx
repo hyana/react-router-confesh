@@ -15,39 +15,22 @@ export default function EditContact() {
   return (
     <Form method="post" id="contact-form">
       <p>
-        <span>Name</span>
+        <span>Title</span>
         <input
-          placeholder="First"
-          aria-label="First name"
+          placeholder="Title"
+          aria-label="Title"
           type="text"
-          name="first"
-          defaultValue={contact.first}
-        />
-        <input
-          placeholder="Last"
-          aria-label="Last name"
-          type="text"
-          name="last"
-          defaultValue={contact.last}
+          name="title"
+          defaultValue={contact.title}
         />
       </p>
       <label>
-        <span>Twitter</span>
+        <span>Group</span>
         <input
           type="text"
-          name="twitter"
-          placeholder="@jack"
-          defaultValue={contact.twitter}
-        />
-      </label>
-      <label>
-        <span>Avatar URL</span>
-        <input
-          placeholder="https://example.com/avatar.jpg"
-          aria-label="Avatar URL"
-          type="text"
-          name="avatar"
-          defaultValue={contact.avatar}
+          name="Group"
+          placeholder="Tyler House"
+          defaultValue={contact.group}
         />
       </label>
       <label>

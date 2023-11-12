@@ -73,12 +73,10 @@ export default function Root() {
                       isActive ? "active" : isPending ? "pending" : ""
                     }
                   >
-                    {contact.first || contact.last ? (
-                      <>
-                        {contact.first} {contact.last}
-                      </>
+                    {contact.title ? (
+                      <>{contact.title}</>
                     ) : (
-                      <i>No Name</i>
+                      <i>Missing Title</i>
                     )}{" "}
                     {contact.favorite && <span>★</span>}
                   </NavLink>

@@ -12,7 +12,7 @@ import Contact, {
 } from "./routes/contact.jsx";
 import EditContact, { action as editAction } from "./routes/edit.jsx";
 import { action as destroyAction } from "./routes/destroy.jsx";
-import Index from "./routes/index";
+import Index, { loader as indexLoader } from "./routes/index";
 import "./index.css";
 import {
   createBrowserRouter,
@@ -35,6 +35,7 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <Index />,
+            loader: indexLoader,
           },
           {
             path: "contacts/:contactId",
@@ -92,7 +93,7 @@ const routerJSX = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
-    <RouterProvider router={routerJSX} />
+    <RouterProvider router={router} />
+    {/* <RouterProvider router={routerJSX} /> */}
   </React.StrictMode>,
 );

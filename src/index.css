@@ -35,7 +35,9 @@ button {
   border: none;
   border-radius: 8px;
   padding: 0.5rem 0.75rem;
-  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  box-shadow:
+    0 0px 1px hsla(0, 0%, 0%, 0.2),
+    0 1px 2px hsla(0, 0%, 0%, 0.2);
   background-color: white;
   line-height: 1.5;
   margin: 0;
@@ -48,7 +50,9 @@ button {
 textarea:hover,
 input:hover,
 button:hover {
-  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  box-shadow:
+    0 0px 1px hsla(0, 0%, 0%, 0.6),
+    0 1px 2px hsla(0, 0%, 0%, 0.2);
 }
 
 button:active {
@@ -275,13 +279,13 @@ i {
   color: hsl(224, 98%, 58%);
 }
 
-#contact a[href*="twitter"] {
+#contact a[href*="group"] {
   display: flex;
   font-size: 1.5rem;
   color: #3992ff;
   text-decoration: none;
 }
-#contact a[href*="twitter"]:hover {
+#contact a[href*="group"]:hover {
   text-decoration: underline;
 }
 

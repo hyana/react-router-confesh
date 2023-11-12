@@ -25,27 +25,13 @@ export default function Contact() {
   return (
     <div id="contact">
       <div>
-        <img key={contact.avatar} src={contact.avatar || null} />
-      </div>
-
-      <div>
         <h1>
-          {contact.first || contact.last ? (
-            <>
-              {contact.first} {contact.last}
-            </>
-          ) : (
-            <i>No Name</i>
-          )}{" "}
+          {contact.title ? <>{contact.title}</> : <i>Missing Title</i>}{" "}
           <Favorite contact={contact} />
         </h1>
 
-        {contact.twitter && (
-          <p>
-            <a target="_blank" href={`https://twitter.com/${contact.twitter}`}>
-              {contact.twitter}
-            </a>
-          </p>
+        {contact.group && (
+          <p>{contact.title ? <>{contact.title}</> : <i>Missing Group</i>} </p>
         )}
 
         {contact.notes && <p>{contact.notes}</p>}

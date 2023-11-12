@@ -1,7 +1,14 @@
-# react-router-example
-React Router Example - tutorial for a kickoff
+# react-router-confesh
 
-# React + Vite
+React Router Confesh - built based on React Router Example
+
+## What's Left
+
+[] Show a table of threads
+[] If no content, clicking cancel or backward should not create an empty thread
+[] Reply feature
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
